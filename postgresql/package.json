@@ -1,0 +1,6 @@
+{
+    "type": "commonjs",
+    "devDependencies": {
+        "@types/sequelize": "^4.28.14"
+    }
+}

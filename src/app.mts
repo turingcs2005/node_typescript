@@ -4,6 +4,8 @@ import cors from "cors";
 import dotenv from "dotenv"; 
 import mongoose from "mongoose";
 
+
+
 dotenv.config();
 console.log(`App name: ${process.env.APP_NAME}`); // print environment variable
 

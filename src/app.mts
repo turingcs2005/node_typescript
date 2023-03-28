@@ -33,7 +33,7 @@ app.use(cookieParser());
 
 app.use('/api', studentRouter);
 app.get('/', (req: Request, res: Response) => {
-	res.send('Hello, world!');
+	res.status(200).send('Hello, world!');
 });
 
 app.listen(PORT, () => {

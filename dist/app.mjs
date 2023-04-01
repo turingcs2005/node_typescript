@@ -26,7 +26,7 @@ app.use(cors()); // allow cross-origin resource sharing
 app.use(cookieParser());
 app.use('/api', studentRouter);
 app.get('/', (req, res) => {
-    res.send('Hello, world!');
+    res.status(200).send('Hello, world!');
 });
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);

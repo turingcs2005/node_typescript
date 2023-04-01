@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-import { Student } from "../models/student.model.mjs"; // use the correct extension after compilation, here .mjs
+import { Student } from "../models/student.model.mjs"; // note that file extension is .mjs, the compiled file 
 // get all students
 router.get('/getStudents', async (req, res) => {
     try {

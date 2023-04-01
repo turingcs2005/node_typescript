@@ -12,7 +12,7 @@ console.log(`App name: ${process.env.APP_NAME}`); // print environment variable
 // connect to a MongoDB database
 const MongoDB_Connection_String = 'mongodb://localhost';
 async function connectToMongoDB(connectionString: string) {
-	mongoose.connect(connectionString);
+	await mongoose.connect(connectionString);
 	console.log('MongoDB database successfully connected!');
 }
 

@@ -18,9 +18,9 @@ router.get('/getStudents', async (req, res) => {
 // post a student
 router.post('/addStudent', async (req, res) => {
     try {
-        await Student.create(req.body);
+        const data = await Student.create(req.body);
         console.log('A new student has been added to database succuessfully!');
-        res.status(200).json(req.body);
+        res.status(200).json(data);
     } catch(e) {
         console.log('Error occured while saving student to database: ', e);
         res.status(400).json({"error": e});
